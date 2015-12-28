@@ -6,7 +6,7 @@ var app = express();
 app.enable('trust proxy');
 
 app.use(function (req, res, next) {
-	if (req.protocol !== 'https') {
+	if (req.headers.host.split(':')[0] !== 'localhost' && req.protocol !== 'https') {
 		return res.redirect('https://' + req.headers.host + req.url);
 	}
 
