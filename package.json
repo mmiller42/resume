@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/mmiller42/resume#readme",
   "dependencies": {
+    "bower": "^1.7.1",
     "express": "^4.13.3"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
