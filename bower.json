@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "homepage": "https://resume.mmiller.me/",
+  "authors": [
+    "Matt Miller"
+  ],
+  "description": "Personal resume",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bsw-yeti": "~3.2.1"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+bower_components
+.tmp
+dump.rdb
+*.log
+*.pid
+npm-debug.log
+*~
+*#
+.DS_STORE
+.idea
+.node_history
