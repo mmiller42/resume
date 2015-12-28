@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 
 app.use(function (req, res, next) {
-	if (!req.secure) {
+	if (!req.connection.encrypted) {
 		return res.redirect('https://' + req.headers.host + req.url);
 	}
 
