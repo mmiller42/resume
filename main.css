@@ -251,4 +251,8 @@ dl dd > :first-child {
 		width: 50% !important;
 		padding: 0 15px;
 	}
+
+	[data-affix] {
+		margin-top: 0 !important;
+	}
 }
