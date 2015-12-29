@@ -53,6 +53,26 @@ p {
 	background: #EEEEEE;
 }
 
+#signature {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 992px) {
+	#signature {
+		width: auto;
+		height: 80px;
+		float: right;
+		margin-top: -90px;
+	}
+}
+
+@media (max-width: 600px) {
+	#signature {
+		display: none;
+	}
+}
+
 #personal-info {
 	padding-bottom: 1px;
 }
