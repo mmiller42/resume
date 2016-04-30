@@ -240,14 +240,53 @@ dl dd > :first-child {
 	position: absolute;
 	top: 0;
 	left: 0;
+	border: 0 solid #FF8C00;
 	border-width: 0 0 15px 0;
-	border-style: solid;
-	border-color: #FF8C00;
 }
 
 @media print {
+	p {
+		font-size: 80%;
+	}
+
 	a[href]:after {
 		font-size: 80%;
+	}
+
+	#intro-blurb {
+		float: left;
+		width: 50%;
+		padding-right: 10px;
+	}
+
+	#intro-blurb h2 {
+		position: absolute;
+		top: -12px;
+		left: 280px;
+		font-size: 39px;
+	}
+
+	#intro-blurb p:before {
+		display: block;
+		content: ' ';
+		clear: both;
+	}
+
+	#contact {
+		float: left;
+		width: 50%;
+		padding-left: 10px;
+		margin-top: 55px;
+	}
+
+	#gray-bg-offset:before {
+		display: block;
+		content: ' ';
+		clear: both;
+	}
+
+	#contact h2 {
+		display: none;
 	}
 
 	#so-mastery {
