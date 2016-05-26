@@ -77,13 +77,8 @@ p {
 	padding-bottom: 1px;
 }
 
-.page-break-before {
-	page-break-before: always;
-}
-
 .container div.small-padding {
 	padding: 10px 15px;
-	page-break-inside: avoid;
 }
 
 #contact h2 {
@@ -156,7 +151,6 @@ dl dt .timeline {
 
 dl dd {
 	padding-left: 180px;
-	page-break-inside: avoid;
 }
 
 dl dd:after {
@@ -172,7 +166,6 @@ dl dd > :first-child {
 
 #skills {
 	margin: 0 -15px;
-	page-break-inside: avoid;
 }
 
 #skills h3 {
@@ -212,10 +205,6 @@ dl dd > :first-child {
 	}
 }
 
-#mastery {
-	page-break-inside: avoid;
-}
-
 #proficiencies ul {
 	list-style: none;
 	padding-left: 0;
@@ -245,8 +234,23 @@ dl dd > :first-child {
 }
 
 @media print {
-	p {
-		font-size: 80%;
+	.container div.small-padding {
+		padding: 5px 0;
+	}
+
+	p,
+	li,
+	dt {
+		font-size: 60%;
+		line-height: 1.35;
+	}
+
+	dl dd:after {
+		height: 1px;
+	}
+
+	#contact li {
+		padding-bottom: 1px;
 	}
 
 	a[href]:after {
@@ -261,8 +265,8 @@ dl dd > :first-child {
 
 	#intro-blurb h2 {
 		position: absolute;
-		top: -12px;
-		left: 280px;
+		top: -18px;
+		left: 275px;
 		font-size: 39px;
 	}
 
@@ -289,8 +293,30 @@ dl dd > :first-child {
 		display: none;
 	}
 
-	#so-mastery {
-		border-right-width: 100px !important;
+	#mastery {
+		display: none;
+	}
+
+	dl {
+		margin-bottom: 0;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 0;
+		margin-bottom: 4px;
+		line-height: 1.25;
+	}
+
+	h3 {
+		font-size: 90%;
+	}
+
+	h4,
+	h5 {
+		font-size: 70%;
 	}
 
 	h1,
@@ -313,5 +339,32 @@ dl dd > :first-child {
 
 	[data-affix] {
 		margin-top: 0 !important;
+	}
+
+	#skills {
+		margin: 0;
+		line-height: 1.25;
+	}
+
+	#skills h3 {
+		margin-left: 0;
+	}
+
+	#skills .skills-column,
+	#skills ul,
+	#skills li {
+		float: none;
+		display: inline;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	#skills li:before {
+		content: ', ';
+	}
+
+	#skills ul:first-of-type li:first-of-type:before {
+		content: '';
 	}
 }
