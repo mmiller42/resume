@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bsw-yeti": "~3.2.1"
+    "bsw-yeti": "~3.2.1",
+    "components-font-awesome": "~4.6.3"
   }
 }

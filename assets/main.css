@@ -92,11 +92,12 @@ p {
 }
 
 #contact li:before {
-	font-family: 'Glyphicons Halflings';
+	font-family: 'FontAwesome';
 	float: left;
 	margin-top: 4px;
 	margin-left: -20px;
 	color: #BBBBBB;
+	position: relative;
 }
 
 #contact li:hover:before {
@@ -115,23 +116,27 @@ p {
 }
 
 #contact #contact_address:before {
-	content: '\e062';
+	content: '\f041';
+	left: 3px;
 }
 
 #contact #contact_phone:before {
-	content: '\e182';
+	content: '\f095';
+	left: 2px;
 }
 
 #contact #contact_email:before {
-	content: '\2709';
+	content: '\f0e0';
 }
 
 #contact #contact_blog:before {
-	content: '\e044';
+	content: '\f02e';
+	left: 2px;
 }
 
 #contact #contact_github:before {
-	content: '\e079';
+	content: '\f09b';
+	left: 1px;
 }
 
 dl dt {
