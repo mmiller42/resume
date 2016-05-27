@@ -234,6 +234,12 @@ dl dd > :first-child {
 }
 
 @media print {
+	html,
+	body,
+	#gray-bg {
+		height: auto !important;
+	}
+
 	.container div.small-padding {
 		padding: 5px 0;
 	}
