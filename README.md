@@ -127,7 +127,7 @@ Whenever a deploy happens, an email is dispatched to the user who made the push,
 
 1. Save the file.
 
-Now we should be at a point where the deploy script will be executed every time anyone pushes to the build (or configured) branch. To try it, make a change to a file, then run [npm run deploy](#npm-run-deploy). It should automatically be reflected on the web host.
+Now we should be at a point where the deploy script will be executed every time anyone pushes to the build (or configured) branch. To try it, make a change to a file, then run [`npm run deploy`](#npm-run-deploy). It should automatically be reflected on the web host.
 
 ## Scripts
 
