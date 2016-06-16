@@ -39,6 +39,12 @@ The first step is to "fork" the *[CodeColaLLC/webpack-site-starter](https://gith
 
 Now the repository is linked to the original starter repository and can be used normally. If changes are made to the starter repository that you want to sync with the client's instance, simply use `git pull upstream master` to merge in the changes again.
 
+1. Open `./package.json` in an editor.
+1. Change the `name` property to your project name, e.g. `acmeco-website`.
+1. Change the `repository.url` property to the URL of your Git repository, e.g. `git+https://github.com/CodeColaLLC/acmeco-website.git`.
+1. Change the `author` property if applicable.
+1. Commit and push your `./package.json` file to the master branch.
+
 ## Installing locally
 
 Once you have your repository cloned to your local computer, just run the following command to install the dependencies:
