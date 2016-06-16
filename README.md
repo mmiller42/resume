@@ -42,7 +42,7 @@ Now the repository is linked to the original starter repository and can be used 
 1. Open `./package.json` in an editor.
 1. Change the `name` property to your project name, e.g.
   ```json
-  "name": acmeco-website",
+  "name": "acmeco-website",
   ```
 
 1. Change the `repository.url` property to the URL of your Git repository, e.g.
