@@ -3,8 +3,8 @@ set -e # Exit with nonzero exit code if anything fails
 
 # Some common configuration
 TARGET_BRANCH="build"
-SOURCE_DIRS=("./public" "./api")
-DEST_DIRS=("./" "./api")
+SOURCE_DIRS=("./public")
+DEST_DIRS=("./")
 
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
