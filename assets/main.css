@@ -270,7 +270,7 @@ dl dd > :first-child {
 
 	#intro-blurb {
 		float: left;
-		width: 50%;
+		width: 75%;
 		padding-right: 10px;
 	}
 
@@ -288,10 +288,13 @@ dl dd > :first-child {
 	}
 
 	#contact {
-		float: left;
-		width: 50%;
+		float: right;
 		padding-left: 10px;
 		margin-top: 55px;
+	}
+
+	#contact a:after {
+		display: none;
 	}
 
 	#gray-bg-offset:before {
