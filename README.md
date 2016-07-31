@@ -31,7 +31,7 @@ This command executes a production-like build from your source files using Webpa
 
 ### `npm run serve`
 
-This command runs a static HTTP server for the `build/` directory generated via `npm run build`. This is a simulation of a production environment.
+This command runs a static HTTP server for the `./build/` directory generated via `npm run build`. This is a simulation of a production environment.
 
 ### `npm run deploy`
 
