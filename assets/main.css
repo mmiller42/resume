@@ -252,7 +252,7 @@ dl dd > :first-child {
 	p,
 	li,
 	dt {
-		font-size: 60%;
+		font-size: 63%;
 		line-height: 1.35;
 	}
 
@@ -285,6 +285,10 @@ dl dd > :first-child {
 		display: block;
 		content: ' ';
 		clear: both;
+	}
+
+	#intro-blurb p {
+		font-size: 80%;
 	}
 
 	#contact {
@@ -356,29 +360,6 @@ dl dd > :first-child {
 	}
 
 	#skills {
-		margin: 0;
-		line-height: 1.25;
-	}
-
-	#skills h3 {
-		margin-left: 0;
-	}
-
-	#skills .skills-column,
-	#skills ul,
-	#skills li {
-		float: none;
-		display: inline;
-		width: auto;
-		margin: 0;
-		padding: 0;
-	}
-
-	#skills li:before {
-		content: ', ';
-	}
-
-	#skills ul:first-of-type li:first-of-type:before {
-		content: '';
+		display: none;
 	}
 }
