@@ -2,8 +2,8 @@
 set -e # Exit with nonzero exit code if anything fails
 
 # Some common configuration
-TARGET_BRANCH="build"
-SOURCE_DIRS=("./public")
+TARGET_BRANCH="gh-pages"
+SOURCE_DIRS=("./build")
 DEST_DIRS=("./")
 
 REPO=`git config remote.origin.url`
@@ -26,7 +26,6 @@ echo "------------------------ Executing build"
 npm run build
 
 # Copy the build contents to the repo
-cp ./deploy.php ./out
 for i in "${!SOURCE_DIRS[@]}"; do
 	SOURCE_DIR="${SOURCE_DIRS[$i]}"
 	DEST_DIR="${DEST_DIRS[$i]}"
