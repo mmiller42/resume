@@ -33,6 +33,7 @@ for i in "${!SOURCE_DIRS[@]}"; do
 	echo "------------------------ Copying build files from ${SOURCE_DIR} into clone of target branch ${TARGET_BRANCH}"
 	mkdir -p ./out/$DEST_DIR
 	cp -R $SOURCE_DIR/* ./out/$DEST_DIR
+	cp CNAME ./out/CNAME
 done
 
 cd ./out
